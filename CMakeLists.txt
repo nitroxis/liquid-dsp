@@ -584,6 +584,10 @@ set(framing_SOURCES
     src/framing/src/qpacketmodem.c
     src/framing/src/qpilotgen.c
     src/framing/src/qpilotsync.c
+    src/framing/src/dsssframegen.c
+    src/framing/src/dsssframesync.c
+    src/framing/src/fskframegen.c
+    src/framing/src/fskframesync.c
     )
 
 set(framing_AUTOTESTS_SOURCES
@@ -613,6 +617,7 @@ set(framing_BENCHMARKS_SOURCES
 #
 set(math_SOURCES
     src/math/src/poly.c
+    src/math/src/poly.findroots.c
     src/math/src/polyc.c
     src/math/src/polyf.c
     src/math/src/polycf.c
@@ -622,6 +627,7 @@ set(math_SOURCES
     src/math/src/math.complex.c
     src/math/src/math.trig.c
     src/math/src/modular_arithmetic.c
+    src/math/src/windows.c
     )
 
 set(math_AUTOTESTS_SOURCES
@@ -758,6 +764,7 @@ set(multichannel_BENCHMARKS_SOURCES
 set(nco_SOURCES
     src/nco/src/nco_crcf.c
     src/nco/src/nco.utilities.c
+    src/nco/src/synth_crcf.c
     )
 
 set(nco_AUTOTESTS_SOURCES
@@ -867,6 +874,7 @@ set(utility_SOURCES
     src/utility/src/msb_index.c
     src/utility/src/pack_bytes.c
     src/utility/src/shift_array.c
+    src/utility/src/utility.c
     )
 
 set(utility_AUTOTESTS_SOURCES

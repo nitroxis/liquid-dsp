@@ -7,6 +7,8 @@
 *.gcno
 *.o
 *.so
+*.dll
+*.exe
 
 # ignore swap files for vim editing
 *.swp
