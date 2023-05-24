@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2007 - 2020 Joseph Gaeddert
+ * Copyright (c) 2007 - 2022 Joseph Gaeddert
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -27,11 +27,18 @@
 #include "liquid.internal.h"
 
 #define NCO(name)   LIQUID_CONCAT(nco_crcf,name)
+#define SYNTH(name) LIQUID_CONCAT(synth_crcf,name)
 #define EXTENSION   "crcf"
 #define T           float
 #define TC          float complex
 
 #define SIN         sinf
 #define COS         cosf
+#define CONJ        conjf
+#define SQRT        sqrtf
+#define LIQUID_PI   (3.14159265358979323846264338327950288f)
 
-#include "nco.c"
+// prototypes
+#include "nco.proto.c"
+#include "synth.proto.c"
+

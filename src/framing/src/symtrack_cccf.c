@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2007 - 2015 Joseph Gaeddert
+ * Copyright (c) 2007 - 2022 Joseph Gaeddert
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -44,12 +44,12 @@
 #define SYMSYNC(name)       LIQUID_CONCAT(symsync_crcf,name)
 #define EQLMS(name)         LIQUID_CONCAT(eqlms_cccf,name)
 #define NCO(name)           LIQUID_CONCAT(nco_crcf,name)
-#define MODEM(name)         LIQUID_CONCAT(modem,name)
+#define MODEM(name)         LIQUID_CONCAT(modemcf,name)
 
 #define TO_COMPLEX          1
 #define TC_COMPLEX          1
 #define TI_COMPLEX          1
 
-// source files
-#include "symtrack.c"
+// prototypes
+#include "symtrack.proto.c"
 

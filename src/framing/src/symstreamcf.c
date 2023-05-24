@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2007 - 2015 Joseph Gaeddert
+ * Copyright (c) 2007 - 2022 Joseph Gaeddert
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -37,9 +37,9 @@
 
 // object references
 #define SYMSTREAM(name)     LIQUID_CONCAT(symstreamcf,name)
-#define MODEM(name)         LIQUID_CONCAT(modem,name)
+#define MODEM(name)         LIQUID_CONCAT(modemcf,name)
 #define FIRINTERP(name)     LIQUID_CONCAT(firinterp_crcf,name)
 
-// source files
-#include "symstream.c"
+// prototypes
+#include "symstream.proto.c"
 
